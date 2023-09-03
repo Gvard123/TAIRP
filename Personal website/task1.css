@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+}
+:root{
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: rgb(12, 209, 12);
+    --big-font:5rem;
+    --h2-font:3rem;
+    --p-font:1.1rem;
+}
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+header{
+    position:fixed;
+    width: 100%;
+    height: 70px;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    padding: 22px 15%;
+    border-bottom:  1px solid transparent;
+    transition: all .45s ease;
+    background-color: #2a2a2a;
+    gap: 150px;
+}
+.logo{
+    color:var(--text-color);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-decoration: none;
+    list-style: none;
+    padding-top: 30px;
+}
+span{
+    color: var(--main-color);
+}
+.navlist{
+    display:flex;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 1px;
+    padding-top: 40px;
+
+}
+.navlist a{
+    color:var(--second-color);
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 25px;
+    transition: all .45s ease;
+    text-decoration: none;
+    list-style: none;
+}
+.navlist a:hover{
+    color: var(--main-color);
+}
+.navlist a:active{
+    color: var(--main-color);
+}
+#menu-icon{
+    font-size: 35px;
+    color: var(--text-color);
+    z-index: 1000;
+    cursor: pointer;
+    margin-left: 25px;
+    display: none;
+}
+section{
+    /* padding: 200px 15%  120px; */
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 100px;
+}
+.home{
+    padding-top: 250px;
+    position: relative;
+    height: 100vh;
+    width: 103%;
+    background-image: url(task/Background.jpg);    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items:center;
+    justify-content: flex-start; 
+}
+.slide{
+    margin-bottom: 20px;
+}
+.one{
+    display: inline-block;
+    margin-right: 15px;
+    padding: 0 15px;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    background: var(--main-color);
+    color: var(--text-color);
+}
+.two{
+    display: inline-block;
+    color: var(--second-color);
+    font-size: 20px;
+    font-weight:  500;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    font-weight: 700;
+    color:var(--text-color);
+    line-height: 1.1;
+     margin: 0 0 8px;
+}
+.home-text h3{
+    color: var(--text-color);
+    margin: 0 0 35px;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+.home-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 40px;
+}
+button{
+    display:inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    display : inline-block;
+    padding: 12px;
+    background: var(--main-color);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all .45s ease;
+    text-decoration: none;
+}
+.btn:hover{
+    transform: scale(0.9);
+}
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+.about-img img{
+    max-width: 400px;
+    height: 475px;
+    width: 100%;
+    border-radius:  20px;
+}
+.about-text h2{
+    font-size: var(--h2-font);
+    line-height: 1; 
+}
+.about-text h4{
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+.about-text p{
+    color: var(--second-color);
+    font-size: var(--p-font);
+    font-family: cursive;
+    line-height: 1.8;
+    margin-bottom: 4rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 5.0rem;
+}
+
+
+.skills{
+    height: 500px;
+    background-color: #202020;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px white;
+    transition: all 0.3s linear;
+    font-size: 1.5rem;
+    padding-left: 60px;
+    padding-top: 10px;
+}
+.education{
+    height: 500px;
+    background-color: #202020;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px white;
+    transition: all 0.3s linear;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+ul li{
+    line-height: 85px;
+}
+.skills h1{
+    text-align: center;
+}
+.education h1{
+    text-align: center;
+}
+.education:hover{
+    transform: scale(1.1);
+}
+.skills:hover{
+    transform:  scale(1.1);
+
+}
+#details{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+#year{
+    font-size: 25px;
+}
+.educontainer{
+    padding-top: 10px;
+    padding-left: 20px;
+}
+.contact {
+    background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.contact-text h4 {
+    color: var(--text-color);
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contact-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+.contact-text p {
+    color: var(--second-color);
+    font-size: var(--p-font);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.list {
+    margin-bottom: 2.8rem;
+
+}
+
+.list li {
+    margin-bottom: 12px;
+    list-style: none;
+
+}
+
+.list li a {
+    display: block;
+    color: var(--second-color);
+    font-size: 20px;
+    transition: all .45s ease;
+    text-decoration: none;
+    list-style: none;
+}
+
+.list li a:hover {
+    color: var(--text-color);
+    transform: translateY(5px);
+
+}
+
+.contact-icons i {
+    height: 45px;
+    width: 45px;
+    color: var(--text-color);
+    font-size: 22px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+    background-color: var(--main-color);
+    padding-top: 10px;
+    text-align: center;
+
+}
+
+.contact-icons i:hover {
+
+    background-color: var(--text-color);
+    color: var(--main-color);
+}
+.end {
+    padding: 20px 15%;
+    flex-wrap: wrap;
+    text-align: center;
+    background: var(--bg-color);
+}
+
+.last-text p {
+    color: var(--second-color);
+    font-size: 20px;
+
+}
